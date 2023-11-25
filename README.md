@@ -12,11 +12,11 @@ BitShop supports a wide range of different methods for selling digital items but
 
 This was a commercial script but the code base is getting slightly outdated and I don't have much time to work on it anymore so I decided to make it open source. Enjoy.
 
-![alt text](./img/screenshot.jpg)
+![BitShop Screenshots](./img/screenshot.jpg)
 
 ## Resources
-Website: [bitfreak.info/bitshop/](https://bitfreak.info/bitshop/)\
-Forum: [bitfreak.info/forum/]([https://bitfreak.info/forum/)
+Website: [bitfreak.info/bitshop/](https://bitfreak.info/bitshop/)  
+Forum: [bitfreak.info/forum/](https://bitfreak.info/forum/)
 
 ## Requirements
 
