@@ -1,0 +1,8 @@
+GoCoin setup:
+
+Sign in then click the little person icon in the top right part of the screen.
+Then fill out your details under the Merchant Profile section.
+Next go to the preferences/settings page and add your payout addresses (BTC, LTC, etc).
+Copy your Merchant ID and click the button to get a new API Key and copy that too.
+Use the Merchant ID and API key to configure GoCoin in the BitShop admin area.
+The callback secret can be any string you choose as long as it's not predictable.

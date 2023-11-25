@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /_private/
+Disallow: /cgi-bin/
+Disallow: /_vti/
+Disallow: /tmp/
+Disallow: /log/
+Disallow: /inc/
+Disallow: /sci/
+Disallow: /lib/

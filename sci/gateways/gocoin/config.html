@@ -1,0 +1,22 @@
+<input type="hidden" name="gateway" value="gocoin" />
+
+<label class="setlab" title="Enable or disable GoCoin gateway.">Enable GoCoin Gateway:</label>
+<select name="enable_gocoin">
+	<option value="true" <?php if ($enable_gocoin) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$enable_gocoin) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Enable GoCoin debug mode (no sandbox).">Debug GoCoin Gateway:</label>
+<select name="debug_gocoin">
+	<option value="true" <?php if ($debug_gocoin) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$debug_gocoin) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Your merchant ID.">GoCoin Merchant ID:</label>
+<input type="password" name="gocoin_merch_id" value="******" />
+
+<label class="setlab" title="Your API secret.">GoCoin API Secret:</label>
+<input type="password" name="gocoin_api_secret" value="******" />
+
+<label class="setlab" title="Your callback secret.">GoCoin Callback Secret:</label>
+<input type="password" name="gocoin_call_secret" value="******" />

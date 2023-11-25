@@ -1,0 +1,6 @@
+PayPal Setup:
+
+Create a PayPal business account if you don't have one
+Log into the BitShop admin area and go to the gateway settings
+Select the PayPal gateway from the dropdown on the right
+Input your PayPal email and a Callback Secret (any random string)

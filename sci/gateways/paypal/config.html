@@ -1,0 +1,19 @@
+<input type="hidden" name="gateway" value="paypal" />
+
+<label class="setlab" title="Enable or disable PayPal gateway.">Enable PayPal Gateway:</label>
+<select name="enable_paypal">
+	<option value="true" <?php if ($enable_paypal) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$enable_paypal) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Enable PayPal debug mode (no sandbox).">Debug PayPal Gateway:</label>
+<select name="debug_paypal">
+	<option value="true" <?php if ($debug_paypal) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$debug_paypal) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Your business email.">PayPal Email Address:</label>
+<input type="text" name="paypal_email" value="<?php if (!empty($paypal_email)) { echo $paypal_email; } ?>" />
+
+<label class="setlab" title="Your callback secret.">PayPal Callback Secret:</label>
+<input type="password" name="paypal_call_secret" value="******" />

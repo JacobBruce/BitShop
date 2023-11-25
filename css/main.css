@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+textarea {
+	width:300px;
+	height:150px;
+}
+
+h1, .notop_margin {
+	margin-top:0px;
+}
+
+.nobot_margin {
+	margin-bottom:0px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	vertical-align:baseline;
+}
+
+[class^="icon-"], 
+[class*=" icon-"] {
+	vertical-align:baseline;
+}
+
+.error_txt {
+	color:red;
+	font-weight:bold;
+}
+
+.happy_txt {
+	color:green;
+	font-weight:bold;
+}
+
+.expand {
+	width:100%;
+}
+
+.float_left {
+	float:left;
+}
+
+.float_right {
+	float:right;
+}
+
+.top_gap {
+	margin-top:10px;
+}
+
+.bot_gap {
+	margin-bottom:10px;
+}
+
+.smaller {
+	font-size:75%;
+}
+
+.no_border {
+    border:none;
+}
+
+.no_shadow {
+    box-shadow:none;
+}
+
+.no_show {
+	visibility:hidden;
+}
+
+.no_display {
+	display:none;
+}
+
+.compact-hero {
+	padding:20px;
+}
+
+.hero-unit h1 {
+	font-size:42px;
+	margin-bottom:10px;
+}
+
+.copy_link {
+	cursor:pointer;
+	border-bottom: 1px dotted #000;
+	display:inline;
+}
+
+.btn {
+	white-space: nowrap;
+}
+
+a.no_deco:link, a.no_deco:visited, a.no_deco:hover, a.no_deco:active {
+  text-decoration: none;
+}
+
+/* MAIN LAYOUT */
+
+#bodycon {
+	width:100%;
+	margin-bottom:10px;
+}
+
+#name_con {
+	width:auto;
+	height:100px;
+	float:left;
+}
+
+#name_txt {
+	margin-bottom:4px;
+	margin-top:14px;
+	font-size:34px;
+}
+
+#slogan_txt {
+	font-size:14px;
+	font-weight:bold;
+}
+
+#order_alert {
+	margin-top:10px;
+}
+
+#info_con {
+	height:70px;
+	float:right;
+	text-align:right;
+	margin-top:20px;
+	padding-top:10px;
+}
+
+#status_submit {
+	height:20px;
+	background-color:#428DB0;
+	border:1px solid black;
+}
+
+#tl_body {
+	font-size:11px;
+}
+
+#side_nav {
+	padding:14px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+/* SHOP CLASSES */
+
+.item_box {
+	display:inline-block;
+	float:left;
+	width:175px;
+	margin:10px;
+	margin-right:20px;
+	margin-left:0px;
+	padding:10px;
+}
+
+.item_box p {
+	color:#43535C;
+	margin:0px;
+	padding:0px;
+	margin-top:5px;
+}
+
+.img_box {
+	width:175px;
+	height:150px;
+	background-color:#F4F7F9;
+	text-align:center;
+	vertical-align:middle;
+	overflow:hidden;
+	margin-bottom:5px;
+}
+
+.ibox_image {
+	width:175px;
+	height:150px;
+}
+
+.ibox_link {
+	display:block;
+	width:100%;
+	height:150px;
+}
+
+.iname_link {
+	display:block;
+	width:175px;
+	overflow:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:#3D4448;
+	text-decoration:none;
+	margin:0px;
+}
+
+.snap_box {
+	max-height:255px;
+	overflow:hidden;
+	overflow-y:hidden;
+}
+
+.side_box {
+	margin-bottom:10px;
+}
+
+.side_price {
+	display:block;
+	font-size:11px;
+	color:#A1A0A0;
+	line-height:15px;
+}
+
+.side_head {
+	margin:0px;
+	margin-bottom:3px;
+	color:#727272;
+	font-size:12px;
+}
+
+.fiat_price {
+	font-size:12px;
+	color:#6C808A;
+}
+
+.tri_dot {
+	list-style-image:url(../img/list_dot.png);
+}
+
+.cat_list {
+	margin-left:0px;
+	list-style-image:none;
+	list-style-type:none;
+}
+
+.sub_list {
+	margin-left:15px;
+	list-style-image:none;
+	list-style-type:none;
+}
+
+.head_li {
+	font-size:16px;
+	margin-bottom:10px;
+}
+
+.sub_li {
+	font-size:14px;
+	padding-left:0px;
+}
+
+.bit_btn {
+	width:150px;
+	height:50px;
+	display:block;
+	border:none;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+.cart_lrow {
+	color:#145677;
+}
+
+.btc_symbol {
+    display:inline-block;
+	height:20px;
+	width:12px;
+	margin:0px;
+	vertical-align:top;
+}
+
+.rev_inp_box {
+	margin-bottom:10px;
+}
+
+.rev_author {
+	display:inline-block;
+	margin:0px;
+}
+
+.rev_head {
+	height:19px;
+	margin-bottom:10px;
+}
+
+.review_txt {
+	font-size:90%;
+}
+
+.rev_stars {
+	width:100px;
+	max-height:19px;
+	float:right;
+}
+
+.star {
+	display:inline-block;
+}
+
+.thumbnails > li  {
+	margin:0px;
+	margin-right:10px;
+}
+
+li > a.side_link {
+	padding:5px;
+	padding-left:8px;
+}
+
+#btc_price {
+	line-height:20px;
+}
+
+#item_image {
+	width:100%;
+}
+
+#item_price {
+	padding-top:0px;
+	margin-bottom:2px;
+	font-size:22px;
+}
+
+#fimg_box {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#quant {
+	width:30px;
+	margin-bottom:0px;
+}
+
+#note {
+	height:80px;
+}
+
+#zip_box {
+	margin-left:15px;
+}
+
+#modal_form {
+	margin:0px;
+}
+
+/* ACCOUNT CLASSES */
+
+.login_input {
+	width:190px;
+}
+
+.login_btn {
+	margin-left:40px;
+}
+
+/* ADMIN CLASSES */
+
+#admincon a {
+	color:purple;
+}
+
+#file_desc {
+	margin-bottom:5px;
+}
+
+#account_search {
+	float:right;
+}
+
+.key_box {
+	width:588px;
+	padding-left:5px;
+}
+
+.thumb_box {
+	width:100px;
+	height:100px;
+	border:1px solid black;
+	font-size:30px;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	background-color:#E2EBF0;
+	margin-right:5px;
+	overflow:hidden;
+}
+
+.rev-pop {
+	min-width:500px;
+}
+
+.tr_link:hover {
+	cursor:pointer;
+}
+
+.setlab {
+	margin-bottom:2px;
+	margin-top:4px;
+}
+
+.page_data {
+	width:550px;
+	height:350px;
+}

@@ -1,0 +1,10 @@
+Coinbase setup:
+
+Create an account at https://commerce.coinbase.com then login
+Go to Settings -> API Keys and click the button to create a new API key.
+In Settings create a new webhook subscription using this endpoint:
+SITE/sci/gateways/coinbase/callback.php?s=SECRET
+Replace SITE with the URL where BitShop is installed.
+Replace SECRET with your Callback Secret (can be any random string).
+Click "Show shared secret" below your Webhook subscriptions to get your Shared Secret.
+Copy the API key, Shared Secret, and Callback Secret into your BitShop gateway settings.

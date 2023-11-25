@@ -1,0 +1,22 @@
+<input type="hidden" name="gateway" value="coinbase" />
+
+<label class="setlab" title="Enable or disable Coinbase gateway.">Enable Coinbase Gateway:</label>
+<select name="enable_coinbase">
+	<option value="true" <?php if ($enable_coinbase) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$enable_coinbase) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Enable Coinbase debug mode (with sandbox).">Debug Coinbase Gateway:</label>
+<select name="debug_coinbase">
+	<option value="true" <?php if ($debug_coinbase) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$debug_coinbase) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Your merchant API key.">Coinbase API Key:</label>
+<input type="password" name="coinbase_api_key" value="******" />
+
+<label class="setlab" title="Your webhook shared secret.">Coinbase Shared Secret:</label>
+<input type="password" name="coinbase_api_secret" value="******" />
+
+<label class="setlab" title="Your callback secret.">Coinbase Callback Secret:</label>
+<input type="password" name="coinbase_call_secret" value="******" />

@@ -1,0 +1,75 @@
+<input type="hidden" name="gateway" value="default" />
+
+<label class="setlab" title="Enable or disable default gateway.">Enable Default Gateway:</label>
+<select name="use_defgate">
+	<option value="true" <?php if ($use_defgate) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$use_defgate) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Enable testnet debug mode.">Debug Default Gateway:</label>
+<select name="use_testnet">
+	<option value="true" <?php if ($use_testnet) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$use_testnet) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Use your own custom list of Bitcoin addresses.">Use Address List:</label>
+<select name="use_address_list">
+	<option value="true" <?php if ($use_address_list) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$use_address_list) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<label class="setlab" title="Number of confirmations required before confirming payment.">Confirmations required:</label>
+<select name="confirm_num">
+<?php
+  for ($i=0; $i<10; $i++) {
+    $sel_txt = ($confirm_num == $i) ? 'selected="selected"' : '';
+	echo "<option value='$i' $sel_txt>$i</option>\n";
+  }
+?>
+</select>
+
+<label class="setlab" title="Use RPC to support altcoin in default gateway.">Use Altcoin RPC:</label>
+<select name="use_altrpc" id="use_alt">
+	<option value="true" <?php if ($use_altrpc) { echo 'selected="selected"'; } ?>>true</option>
+	<option value="false" <?php if (!$use_altrpc) { echo 'selected="selected"'; } ?>>false</option>
+</select>
+
+<div id="alt_conf">
+	<label class="setlab" title="Number of confirmations required for altcoin payments.">Altcoin Confirmations:</label>
+	<select name="alt_confirms">
+	<?php
+	  for ($i=1; $i<10; $i++) {
+		$sel_txt = ($alt_confirms == $i) ? 'selected="selected"' : '';
+		echo "<option value='$i' $sel_txt>$i</option>\n";
+	  }
+	?>
+	</select>
+
+	<label class="setlab" title="Name of the altcoin (if enabled).">Altcoin Currency Name:</label>
+	<input type="text" name="altcoin_name" value="<?php echo $altcoin_name; ?>" />
+
+	<label class="setlab" title="Altcoin currency code (e.g. LTC).">Altcoin Currency Code:</label>
+	<input type="text" name="altcoin_code" value="<?php echo $altcoin_code; ?>" />
+
+	<label class="setlab" title="Altcoin RPC username (if enabled).">RPC Username:</label>
+	<input type="text" name="rpc_user" value="<?php echo $rpc_user; ?>" />
+
+	<label class="setlab" title="Altcoin RPC password (if enabled).">RPC Password:</label>
+	<input type="password" name="rpc_pass" value="******" />
+</div>
+
+<script language="JavaScript">
+function show_altconf(state) {
+    if (state == 'true') {
+		$('#alt_conf').show();
+	} else {
+		$('#alt_conf').hide();
+	}
+}
+
+$('#use_alt').change(function() {
+	show_altconf(this.value);
+});
+
+show_altconf($('#use_alt').val());
+</script>

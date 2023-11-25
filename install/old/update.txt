@@ -1,0 +1,19 @@
+How to update BitShop (for v0.9.1 to v1.0.6):
+
+1) Make a backup of your existing BitShop files and database.
+2) Upload new BitShop files and replace old files (can skip log files).
+3) Run the update_db.php script then run the install.php script.
+4) Login to the admin area and update your settings (old settings are lost)
+5) Change your cron job commands to run the scripts in the "cron" folder.
+6) You will have to reapply any customizations you made to BitShop.
+
+You should also delete the following files:
+
+/inc/admin/login.inc.php
+/inc/admin/tickconfig.inc.php
+/inc/pages/status.inc.php
+/sci/ajax_hack.php
+/sci/callback.php
+/clean_trans.php
+/goxgrab/*
+/install/*
