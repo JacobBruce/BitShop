@@ -36,6 +36,8 @@ Follow this simple process to install BitShop:
 
 Check which files have changed in the new version of BitShop and replace your old files with the updated files. Then re-apply any customizations you made to the new files.
 
+**Ensure you make a backup of your files and database before attempting to update BitShop. If any configuration files need to be updated you may need to re-apply your old settings.**
+
 ## Planned Updates
 
 These are some of the future updates planned for BitShop. Contributers are welcome to work on these or any other features because I have limited time to work on BitShop.
