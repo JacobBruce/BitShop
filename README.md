@@ -35,3 +35,21 @@ Follow this simple process to install BitShop:
 ## Updating
 
 Check which files have changed in the new version of BitShop and replace your old files with the updated files. Then re-apply any customizations you made to the new files.
+
+## Planned Updates
+
+These are some of the future updates planned for BitShop. Contributers are welcome to work on these or any other features because I have limited time to work on BitShop.
+
+- option to change default coin symbol from BTC
+- shipping zones with sub-zones (states)
+- make rss feed more modular (file based)
+- widget system for cart and top/best prods
+- adjustable tax rate for cart
+- add a wish list system
+- automatic updater & version check
+- add ticket support system
+- mailing list (if only to see list)
+- send emails when items in stock
+- postgresql & SQLite support
+- fix old language files
+- ability for user to change themes
